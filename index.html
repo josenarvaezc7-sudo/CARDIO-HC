@@ -1169,6 +1169,10 @@ MÉDICOS POSGRADISTAS DE CARDIOLOGÍA: ${val('medPosgradista', 'MD. JOSÉ NARVÁ
       rec.onend = () => { if (btn) btn.textContent = '🎤 Dictar'; };
       rec.start();
     }
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
   </script>
 </body>
 </html>
